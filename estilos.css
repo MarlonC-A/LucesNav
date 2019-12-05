@@ -55,6 +55,36 @@ body {
     animation-duration: 1.4s;
 }
 
+.lightrope li:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 10px;
+    height: 9px;
+    border-radius: 3px;
+    top: -5px;
+    left: 1px;
+}
+
+.lightrope li:after {
+    content: "";
+    top: -14px;
+    left: 9px;
+    position: absolute;
+    width: 52px;
+    height: 19px;
+    border-bottom: solid #222 2px;
+    border-radius: 50%;
+}
+
+.lightrope li:last-child:after {
+    content: none;
+}
+
+.lightrope li:first-child {
+    margin-left: -40px;
+}
+
 @keyframes flash-1 {
 	0%,100%{
 		background: #00f7a5;
@@ -93,4 +123,20 @@ h1 {
 	text-align: center;
 	position: absolute;
 	margin: 100px auto;
+}
+
+h2 {
+	color: #ccc;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	margin: 200px auto;
+}
+
+h3 {
+	color: #999;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	margin: 300px auto;
 }
